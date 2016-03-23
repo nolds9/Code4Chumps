@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= full_title(yield(:title))%></title>
-
-  <%= stylesheet_link_tag   'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
+  <title><%= full_title(yield(:title)) %></title>
+  <%= render 'layouts/stylesheets' %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
-<center><h1><%= (yield(:h1)) %></h1>ERB input dawg</center>
-<%= yield %>
+
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </div>
 
 </body>
 </html>
