@@ -6,13 +6,13 @@ default: &default
 
 development:
   <<: *default
-  database: RailsProject_development
+  database: Savannah_development
 
 
 test:
   <<: *default
-  database: RailsProject_test
+  database: Savannah_test
 
 production:
   <<: *default
-  database: RailsProject_production
+  database: Savannah_production

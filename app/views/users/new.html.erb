@@ -5,10 +5,13 @@
 
 <%= form_for @user do |f| %>
 <div class="textfield">
+
 <%= f.label :name %>
-<%= f.text_area :name %> <br>
-<%= f.label :email %> 
-<%= f.text_area :email %>
+<%= f.text_field :name %> <br>
+
+<%= f.label :email %>
+<%= f.text_field :email %> <br>
+
 <%= f.submit "Submit" %>
 </div>
 <% end %>
