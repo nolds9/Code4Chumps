@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
   def create
     @user = User.create(user_params)
-    binding.pry
+    binding.pry # NHO: probably want to remove this for production
       redirect_to home_path
   end
 
@@ -17,8 +17,11 @@ class UsersController < ApplicationController
 
   end
 
+  # NHO: edit?
+
   def update
     @user = User.find(params[:id])
+    # NHO: After we find the user, thinking in pseudo code, what else do we need to do? 
   end
 
   def user_params

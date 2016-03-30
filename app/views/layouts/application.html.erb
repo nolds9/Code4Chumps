@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= full_title(yield(:title)) %></title>
+  <title><%= full_title(yield(:title)) %></title> <!-- NHO: what about a title like "Code4Chumps" -->
   <%= render 'layouts/stylesheets' %>
   <%= render 'layouts/shim' %>
 </head>
 <body>
-
+  <!-- NHO: nice use of partials!  -->
   <%= render 'layouts/header' %>
   <div class="container">
     <%= yield %>
